@@ -9,3 +9,15 @@
 ## [On the cruelty of really teaching computing science, EWD 1036](https://www.cs.utexas.edu/~EWD/ewd10xx/EWD1036.PDF)
 
 // TODO
+
+## WiscKey: Separating Keys from Values in SSD-Conscious Storage
+
+Main idea: in LSM tree, separates keys and values to lower read & write
+amplification
+
+After separation, range queries require random reads -> utilize SSD parallel
+random read
+
+## The Bw-Tree: A B-tree for New Hardware Platforms
+
+// TODO
