@@ -21,3 +21,12 @@ random read
 ## The Bw-Tree: A B-tree for New Hardware Platforms
 
 // TODO
+
+## Bigtable: A Distributed Storage System for Structured Data
+
+Depends on: Chubby
+
+
+## The Chubby Lock Service for Loosely-Coupled Distributed Systems
+
+// TODO
