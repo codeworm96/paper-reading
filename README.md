@@ -37,5 +37,13 @@ OLTP database systems design can date back to 1970's / 1980's.
 This paper evaluates instruction-level breakdown of components in an OLTP database system,
 which can be used as a guidance for making changes under situations now.
 
-They make their modification on [Shore Storage Manager](http:// www.cs.wisc.edu/shore/).
+They make their modification on [Shore Storage Manager](http://www.cs.wisc.edu/shore/).
 The workload they use for evaluation is (modified) TPC-C.
+
+## Main Memory Database Systems: An Overview
+
+A review for in-memory database systems, focusing on where in-memory databases should be different from
+disk-oriented databases and why.
+
+Covers in-memory database systems from pencil-and-paper designs (MM-DBMS, MARS, HALO) to
+prototypes (OBE, TPK, System M) to commercial systems (Fast Path) at that time (1992).
