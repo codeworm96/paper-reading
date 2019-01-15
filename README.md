@@ -30,3 +30,12 @@ Depends on: Chubby
 ## The Chubby Lock Service for Loosely-Coupled Distributed Systems
 
 // TODO
+
+## OLTP Through the Looking Glass, and What We Found There
+
+OLTP database systems design can date back to 1970's / 1980's.
+This paper evaluates instruction-level breakdown of components in an OLTP database system,
+which can be used as a guidance for making changes under situations now.
+
+They make their modification on [Shore Storage Manager](http:// www.cs.wisc.edu/shore/).
+The workload they use for evaluation is (modified) TPC-C.
