@@ -47,3 +47,11 @@ disk-oriented databases and why.
 
 Covers in-memory database systems from pencil-and-paper designs (MM-DBMS, MARS, HALO) to
 prototypes (OBE, TPK, System M) to commercial systems (Fast Path) at that time (1992).
+
+## A Critique of ANSI SQL Isolation Levels
+
+// TODO
+
+## Staring into the Abyss: An Evaluation of Concurrency Control with One Thousand Cores
+
+// DONE but keep private because it's homework
