@@ -54,4 +54,17 @@ prototypes (OBE, TPK, System M) to commercial systems (Fast Path) at that time (
 
 ## Staring into the Abyss: An Evaluation of Concurrency Control with One Thousand Cores
 
+It is expected that in the future CPU will have many cores in a single chip.
+This paper evaluates seven concurrency control schemes (deadlock detection, no wait,
+wait die, timestamp, MVCC, OCC, H-store) and finds that neither of them scales well
+on a 1024-core CPU for different reasons. It concludes that for many-core CPU in the
+future, new concurrency control schemes
+are needed and cooperation between software and hardware design may be needed.
+They build their own main memory database system from scratch to reduce
+the effect of specific legacy implementation and use Graphite to simulate
+the many-core CPU.
+The workloads used in this paper is based on YCSB and TPC-C.
+
+## An Empirical Evaluation of In-Memory Multi-Version Concurrency Control
+
 // DONE but keep private because it's homework
