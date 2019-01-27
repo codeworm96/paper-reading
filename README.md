@@ -67,4 +67,14 @@ The workloads used in this paper is based on YCSB and TPC-C.
 
 ## An Empirical Evaluation of In-Memory Multi-Version Concurrency Control
 
+Currently, multi-version concurrency control is a popular concurrency control scheme in DBMSs,
+but it has many design choices. This paper made the evaluation of MVCC's performance under
+different design choices, including concurrency control protocol, version storage,
+garbage collection, and index management. This paper highlights the trade-offs of
+different design choices and their bottlenecks.
+They implemented different MVCC approaches to be evaluated in the Peloton DBMS.
+The workloads used for evaluation are modified YCSB and TPC-C.
+
+## Fast Serializable Multi-Version Concurrency Control for Main-Memory Database Systems
+
 // DONE but keep private because it's homework
