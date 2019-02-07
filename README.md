@@ -96,3 +96,20 @@ some transactions). Finally, the authors combined these ideas and created Hybrid
 Their HybridGC is implemented in SAP HANA in-memory database.
 The workload used in the evaluation is modified TPC-C benchmark with additional
 long-running queries.
+
+##  A Survey of B-Tree Locking Techniques
+
+The paper first distinguishes B-Tree "locking" into two forms: locks and latches.
+Locks protect database's logic contents and separate transactions.
+Latches protect shared data structures, are embedded in the data structure itself,
+separate threads and avoid deadlocks by coding disciplines.
+
+For latches, the paper talks about ideas like read-only/read-write latches,
+latch coupling, B-Trees with relaxed constraints like B^link-Trees and
+asynchronous B-Tree structure maintenance.
+
+For locks, the paper covers key range locking for preventing phantoms to
+ensure serializability. It talks about optimizations like ghost records,
+hierarchical locking, and the increment lock mode.
+
+This paper contains no implementation and has no evaluation part.
