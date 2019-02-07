@@ -77,4 +77,15 @@ The workloads used for evaluation are modified YCSB and TPC-C.
 
 ## Fast Serializable Multi-Version Concurrency Control for Main-Memory Database Systems
 
+MVCC is widely used in many DBMSs, but most systems only implement snapshot isolation, because
+adding serializability guarantee could be expensive. In this paper, the authors propose an MVCC
+implementation that has little overhead when adding serializability guarantee by precision
+locking and checking writes of recently committed transactions. They also use VersionedPosition
+column to provide high scan performance.
+They implemented their MVCC in the HyPer main-memory database system.
+The workloads used for evaluation include the SIBENCH benchmark, TPC-C,
+The Telecommunication Application Transaction Processing (TATP) benchmark and TPC-H.
+
+## Hybrid Garbage Collection for Multi-Version Concurrency Control in SAP HANA
+
 // DONE but keep private because it's homework
