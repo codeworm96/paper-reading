@@ -88,4 +88,11 @@ The Telecommunication Application Transaction Processing (TATP) benchmark and TP
 
 ## Hybrid Garbage Collection for Multi-Version Concurrency Control in SAP HANA
 
-// DONE but keep private because it's homework
+In mixed OLTP and OLAP workloads, OLTP workloads will generate many versions, but long-running
+OLAP query will block garbage collection. This paper contributes ideas to handle this problem,
+including interval GC (using visible intervals to check for visibility), group GC (GC in the
+unit of commit groups), table GC (using the information that some tables are irrelevant to
+some transactions). Finally, the authors combined these ideas and created HybridGC.
+Their HybridGC is implemented in SAP HANA in-memory database.
+The workload used in the evaluation is modified TPC-C benchmark with additional
+long-running queries.
